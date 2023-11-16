@@ -5,7 +5,7 @@ let input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-function dataHandling(arrContainer) {
+function dataHandling() {
     let result = ''
     for (let i = 0; i < input.length; i++) {
         result += `Nomor ID: ${input[i][0]}\n`
