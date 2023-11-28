@@ -4,15 +4,14 @@ Diberikan sebuah function perkalianUnik(arr) yang menerima satu parameter berupa
 function perkalianUnik(arr) {
     // you can only write your code here!
     let result = [];
+    let perkalianCounter = 1;
   
     for (let i = 0; i < arr.length; i++) {
-        let perkalianCounter = 1;
-        for (let j = 0; j < arr.length; j++) {
-            perkalianCounter *= arr[j];
+        perkalianCounter *= arr[i];
         }
-        result.push(perkalianCounter / arr[i]);
+    for(let j = 0; j < arr.length; j++) {
+        result.push(perkalianCounter / arr[j])
     }
-
     return result;
   }
   
