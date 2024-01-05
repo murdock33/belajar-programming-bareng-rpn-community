@@ -10,8 +10,8 @@ function ubahHuruf(kata) {
   for (let i = 0; i < kataSplit.length; i++) {
     for (let j = 0; j < alphabetSplit.length; j++) {
       if (kataSplit[i] === alphabetSplit[j]) {
-        if(kataSplit[i] == 'z') {
-            result += 'a';
+        if(kataSplit[i] === 'z') {
+            result += alphabetSplit[0];
         } else {
             result += alphabetSplit[j+1]
         }
@@ -27,3 +27,4 @@ console.log(ubahHuruf("developer")); // efwfmpqfs
 console.log(ubahHuruf("javascript")); // kbwbtdsjqu
 console.log(ubahHuruf("keren")); // lfsfo
 console.log(ubahHuruf("semangat")); // tfnbohbu
+console.log(ubahHuruf("zebra")); // afcsb
