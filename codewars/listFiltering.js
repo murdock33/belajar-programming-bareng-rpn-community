@@ -1,3 +1,5 @@
+// List Filtering - Kyu 7
+
 function filter_list(l) {
   // Return a new array with the strings filtered out
   let newArray = [];
